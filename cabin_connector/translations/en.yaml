@@ -1,0 +1,6 @@
+configuration:
+  server:
+    name: Cabinmanager address
+    description: Only change this if Cabinmanager runs at a different address (e.g. a test system).
+network:
+  8765/tcp: Tablet access on the local network (encrypted). Leave empty to turn it off.

@@ -1,0 +1,6 @@
+configuration:
+  server:
+    name: Cabinmanager-Adresse
+    description: Nur ändern, wenn der Cabinmanager unter einer anderen Adresse läuft (z. B. Testsystem).
+network:
+  8765/tcp: Tablet-Zugang im WLAN (verschlüsselt). Leer lassen schaltet ihn aus.

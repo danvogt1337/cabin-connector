@@ -1,0 +1,5 @@
+# Add-on-Repository für Home Assistant (J8): In Home Assistant unter Einstellungen → Add-ons → Add-on Store → Repositories
+# die Adresse dieses Repositorys eintragen; Updates werden dann automatisch angeboten.
+name: Cabinmanager
+url: https://cabinmanager.de
+maintainer: Cabinmanager
