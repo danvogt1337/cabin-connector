@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { starte } from "./connector.ts";
 import { LOKAL_PORT } from "./lokal.ts";
 
-export const VERSION = "2.0.0";
+export const VERSION = "2.0.1";
 
 const optionen = JSON.parse(readFileSync("/data/options.json", "utf8")) as { server?: string };
 const token = process.env.SUPERVISOR_TOKEN;

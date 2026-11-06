@@ -1,5 +1,5 @@
 name: Cabin Connector
-version: "2.0.0"
+version: "2.0.1"
 slug: cabin_connector
 description: Verbindet dieses Home Assistant sicher mit dem Cabinmanager – ohne offene Ports, ohne Tunnel.
 url: https://cabinmanager.de

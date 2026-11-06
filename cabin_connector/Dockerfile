@@ -5,4 +5,6 @@ FROM ${BUILD_FROM}
 RUN apk add --no-cache nodejs openssl
 WORKDIR /app
 COPY app/ /app/
-CMD ["node", "--experimental-strip-types", "--disable-warning=ExperimentalWarning", "/app/start.ts"]
+# Das Basis-Bild startet über s6-overlay, das die Umgebung des Containers (u. a. SUPERVISOR_TOKEN) nicht von selbst
+# weiterreicht – with-contenv gibt sie an Node weiter.
+CMD ["/usr/bin/with-contenv", "node", "--experimental-strip-types", "--disable-warning=ExperimentalWarning", "/app/start.ts"]
